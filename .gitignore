@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+*.log
+
+# live content (uncomment if you'd rather not version your published content)
+# server/content.json
+# server/content.backup.json

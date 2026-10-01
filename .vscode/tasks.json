@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start portfolio (site + dashboard)",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": { "kind": "build", "isDefault": true },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Production build",
+      "type": "shell",
+      "command": "npm run build",
+      "problemMatcher": []
+    },
+    {
+      "label": "API tests",
+      "type": "shell",
+      "command": "npm run test:api",
+      "problemMatcher": []
+    },
+    {
+      "label": "Reset content to defaults",
+      "type": "shell",
+      "command": "npm run seed -- --force",
+      "problemMatcher": []
+    }
+  ]
+}
